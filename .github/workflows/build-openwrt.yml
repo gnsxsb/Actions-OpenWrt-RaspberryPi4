@@ -109,7 +109,6 @@ jobs:
       with:
         name: OpenWrt_bin
         path: openwrt/bin
-
     - name: Organize files
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
@@ -124,4 +123,3 @@ jobs:
       with:
         name: OpenWrt_firmware
         path: ${{ env.FIRMWARE }}
-
